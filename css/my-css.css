@@ -1,0 +1,172 @@
+body {
+margin: 0%;
+
+}
+
+#Processor-Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #Processor-Video {
+        display: none;
+    }
+}
+
+.video-text {
+    background: rgba(0,0,0,0.5);
+    color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}    
+}
+
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+
+}
+
+@keyframes moveNav {
+    from{left: -100vw;}
+    to{left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s
+}
+
+.Navbar a.active {
+    background-color: darkgray;
+
+}
+
+.Navbar a:hover {
+    background-color: azure;
+    color: black;
+    font-weight: bold;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}    
+}
+
+@media screen and (max-width: 576px){
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+
+
+
+.white-text {
+    color: azure;
+}
+
+.center {
+    text-align: center;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 576px){
+    .Column-1{
+        overflow: auto;
+    }
+}
+
+.Column-1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: rgb(38, 38, 38);
+}
+
+.Column-2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: rgb(48, 48, 48);
+}
+
+.Column-tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+q {
+    font-style: italic;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 576px){
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+h1 {
+    transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:azure;
+    text-align: center;
+    margin-top: 3%;    
+
+}
+
+p {
+
+    color: azure;
+
+}
